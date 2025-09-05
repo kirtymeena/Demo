@@ -1,0 +1,122 @@
+@use "../../sass/utils/breakpoints" as *;
+
+
+.dashboard {
+    padding: 20px;
+    background: #f5f6fa;
+    min-height: 100vh;
+
+    /* -------- TOP SECTION -------- */
+    .top-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        .map-card {
+            width: 100%;
+            height: 250px;
+        }
+
+        .right-panels {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .info-card {
+                width: 100%;
+                height: 150px;
+            }
+        }
+    }
+
+    /* -------- FILTER BAR -------- */
+    .filter-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+        padding: 12px 20px;
+        background: #fff;
+        margin-bottom: 20px;
+        border-radius: 8px;
+
+        .filter-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-start;
+        }
+    }
+
+    /* -------- SITES GRID -------- */
+    .sites-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* mobile: single column */
+        gap: 20px;
+
+        .site-card {
+            height: 210px;
+            border-radius: 8px;
+        }
+    }
+}
+
+/* -------- MEDIA QUERIES -------- */
+
+/* Tablet (≥600px) */
+@include respond("tablet") {
+    .dashboard {
+        .filter-bar {
+            flex-direction: row;
+            align-items: center;
+
+            .filter-actions {
+                margin-left: auto;
+            }
+        }
+
+        .sites-grid {
+            grid-template-columns: repeat(2, 1fr);
+            /* 2 columns */
+        }
+    }
+}
+
+/* Small desktop (≥960px) */
+@include respond("small-desktop") {
+    .dashboard {
+        .top-section {
+            flex-direction: row;
+
+            .map-card {
+                flex: 0.5;
+            }
+
+            .right-panels {
+                flex: 1;
+                flex-direction: row;
+
+                .info-card {
+                    flex: 1;
+                    height: auto;
+                }
+            }
+        }
+
+        .sites-grid {
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 columns */
+        }
+    }
+}
+
+/* Large desktop (≥1280px) */
+@include respond("desktop") {
+    .dashboard {
+        .sites-grid {
+            grid-template-columns: repeat(4, 1fr);
+            /* 4 columns */
+        }
+    }
+}

@@ -1,9 +1,6 @@
 import Header from "./components/header/Header"
-import Button from '@mui/material/Button';
 import SubHeader from "./components/subHeader/SubHeader";
-import SectionAbove from "./components/sectionAbove/SectionAbove";
-import ActionHeader from "./components/ActionHeader/ActionHeader";
-import SectionBelow from "./components/sectionBelow/SectionBelow";
+import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
 
@@ -14,15 +11,7 @@ function App() {
         <SubHeader />
       </header>
       <main>
-        <section className="home__section1">
-          <SectionAbove />
-        </section>
-        <section className="home__actions">
-          <ActionHeader />
-        </section>
-        <section className="home__section2">
-          <SectionBelow />
-        </section>
+        <Dashboard />
       </main>
 
     </div>
