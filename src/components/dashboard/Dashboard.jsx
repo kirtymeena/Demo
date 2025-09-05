@@ -27,7 +27,7 @@ export default function Dashboard() {
                 </Card>
 
                 <Box className="right-panels">
-                    <Card className="info-card">
+                    <Card className="info-card card1">
                         <CardContent>
                             <Typography variant="h6">Totals</Typography>
                             <Typography>Power Generation, Storage, Consumption</Typography>

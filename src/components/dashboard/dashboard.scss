@@ -73,7 +73,11 @@
             .filter-actions {
                 margin-left: auto;
             }
+
+
         }
+
+
 
         .sites-grid {
             grid-template-columns: repeat(2, 1fr);
@@ -95,6 +99,10 @@
             .right-panels {
                 flex: 1;
                 flex-direction: row;
+
+                .card1 {
+                    flex: 1.3 !important
+                }
 
                 .info-card {
                     flex: 1;
