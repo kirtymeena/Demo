@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; // prevents horizontal scrollbars
+}
+
 body {
     font-family: sans-serif;
     background-color: #f5f7f7;

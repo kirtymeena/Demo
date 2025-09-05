@@ -1,3 +1,5 @@
+@use "../../sass/utils/breakpoints" as *;
+
 .header {
     width: 100%;
     padding: 16px;
@@ -25,8 +27,22 @@
     display: flex;
     gap: 8px;
     border-radius: 4px;
-    border: 1px solid rgb(216, 217, 219);
     justify-content: center;
     align-items: center;
-    padding: 4px
+    padding: 4px;
+
+    @include respond("tablet") {
+        border: 1px solid rgb(216, 217, 219);
+    }
+}
+
+.user-md {
+    display: none;
+}
+
+@include respond("tablet") {
+    .user-md {
+        display: block;
+    }
+
 }
