@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f5f7f7;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    min-height: calc((100vh - 120px));
+}
+
+.home__section1 {
+    height: 40%;
+    border: 1px solid red;
+}

@@ -1,0 +1,32 @@
+%no-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 16px;
+    width: auto;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    @extend %no-btn
+}
+
+.btn:hover {
+    background-color: #1a729e73
+}
+
+.btn:active {
+    background-color: #156390;
+}
+
+.btn:focus {
+    background-color: #156390;
+}
+
+.btn-selected {
+    background-color: #156390;
+}

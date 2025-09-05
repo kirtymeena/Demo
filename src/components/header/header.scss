@@ -1,0 +1,32 @@
+.header {
+    width: 100%;
+    padding: 16px;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    gap: 16px;
+    min-height: inherit;
+
+    .header__logo {
+        width: 6rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.header__right {
+    display: flex;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid rgb(216, 217, 219);
+    justify-content: center;
+    align-items: center;
+    padding: 4px
+}
